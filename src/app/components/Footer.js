@@ -38,22 +38,37 @@ export default function Footer() {
               spy={true}
               className="cursor-pointer"
             >
-              <Image src={"/icons/logo (2).png"} width={150} height={150} alt="" className="mb-12"/>
+              <Image
+                src={"/icons/logo (2).png"}
+                width={150}
+                height={150}
+                alt=""
+                className="mb-12"
+              />
             </Link>
             <div className="font-bold lg:text-left text-center">
-              JRM VEÍCULOS.<br/>
-              <FaPhone className="inline-block align-middle" /> (11)91234-12345<br/>
-              <FaEnvelope className="inline-block align-middle" /> jrmveiculos@gmail.com<br/>
+              JRM VEÍCULOS.
+              <br />
+              <FaPhone className="inline-block align-middle" /> (11)91234-12345
+              <br />
+              <FaEnvelope className="inline-block align-middle" />{" "}
+              jrmveiculos@gmail.com
+              <br />
               <FaRobot className="cursor-pointer inline-block align-middle" />
-              <Link to={"home"} className="font-medium cursor-pointer">
+              <a
+                href="https://chat-bot-jrm-veiculos.vercel.app/"
+                className="font-medium cursor-pointer"
+              >
                 Tire dúvidas com o nosso ChatBot
-              </Link>
+              </a>
             </div>
           </div>
           {/* links */}
           <div className="flex flex-col flex-1 items-center lg:items-start">
             <div>
-              <h3 className="h3 font-bold mb-4 lg:mb-8 text-center lg:text-left">Empresa</h3>
+              <h3 className="h3 font-bold mb-4 lg:mb-8 text-center lg:text-left">
+                Empresa
+              </h3>
               <ul className="flex flex-col gap-y-4 font-semibold text-center lg:text-left">
                 <li>
                   <Link
@@ -100,7 +115,9 @@ export default function Footer() {
           </div>
           {/* programa */}
           <div className="flex-1">
-            <h3 className="h3 font-bold mb-4 lg:mb-8 text-center lg:text-left">Horário de Atendimento</h3>
+            <h3 className="h3 font-bold mb-4 lg:mb-8 text-center lg:text-left">
+              Horário de Atendimento
+            </h3>
             <div className="flex flex-col gap-y-4 text-center lg:text-left">
               <div className="flex gap-x-2">
                 <div className="text-secondary">Seg-Sex:</div>
@@ -118,7 +135,9 @@ export default function Footer() {
           </div>
           {/* notícias*/}
           <div className="flex-1">
-            <h3 className="h3 font-bold mb-4 lg:mb-8 text-center lg:text-left">Notícias</h3>
+            <h3 className="h3 font-bold mb-4 lg:mb-8 text-center lg:text-left">
+              Notícias
+            </h3>
             <div className="mb-9 text-secondary text-center lg:text-left">
               Receba as últimas notícias relacionadas à nossa empresa
             </div>
