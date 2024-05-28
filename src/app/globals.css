@@ -2,32 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* estilo do calendário */
+.rdrDayToday:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span:after,
+.rdrDayToday:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span:after,
+.rdrDayToday:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span:after,
+.rdrDayToday:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber span:after {
+  background-color: #fff !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.rdrDayToday .rdrDayNumber span:after {
+  background: #ed1d24 !important;
+}
+
+.rdrMonthAndYearPickers {
+  font-size: 16px;
+}
+
+.rdrDayNumber,
+.rdrWeekDay {
+  color: #1e1f23 !important;
+  font-weight: 500 !important;
+}
+
+/* swiper styles */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+    background-color: #f13024;
+}
+
+@layer base {
+  body {
+    @apply bg-body;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  p {
+    @apply text-secondary;
+  }
+  .h1 {
+    @apply text-4xl xl:text-[64px] text-primary xl:leading-[72px] font-extrabold mb-[18px];
+  }
+  .h2 {
+    @apply text-4xl mb-6 font-bold;
+  }
+  .h3 {
+    @apply text-xl mb-4 font-semibold;
+  }
+  .description {
+    @apply text-base xl:text-xl xl:leading-8;
+  }
+  .section {
+    @apply w-full h-screen pt-[60px] xl:pt-[120px];
+  }
+  .btn {
+    @apply rounded-[10px] w-full uppercase font-medium text-white tracking-[2px] text-[13px] flex justify-center items-center transition-all duration-300;
+  }
+  .btn-sm {
+    @apply h-14;
+  }
+  .btn-lg {
+    @apply h-16;
+  }
+  .btn-cta {
+    @apply bg-primary h-[54px] rounded-[5px] px-4 transition-all duration-300;
+  }
+  .btn-primary {
+    @apply bg-primary;
+  }
+  .btn-secondary {
+    @apply bg-secondary;
+  }
+  .btn-accent {
+    @apply bg-accent hover:bg-accent-hover;
+  }
+  .active {
+    @apply text-accent;
   }
 }
