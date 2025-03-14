@@ -1,6 +1,6 @@
 # JRM Veíulos
 
-This project is a landing page showcasing the car dealership JRM Veículos. On this page, users can learn more about the company's history, view cars for sale, understand why to choose the company's products, and find contact information. This project was built using:
+The project is a landing page showcasing the car dealership JRM Veículos. On this page, users can learn more about the company's history, view cars for sale, understand why to choose the company's products, and find contact information. This project was built using:
 
 - React.JS
 - Next.JS
